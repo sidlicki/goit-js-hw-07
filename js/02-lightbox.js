@@ -27,7 +27,7 @@ function createLi({ preview, original, description }) {
   return item;
 }
 //
-let gallery = new SimpleLightbox(".gallery a", {
+const gallery = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });

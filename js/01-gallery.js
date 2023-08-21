@@ -68,11 +68,12 @@ function onClick(evt) {
 
   instance.show();
 
-  window.addEventListener("keydown", escPress);
+  document.addEventListener("keydown", escPress);
 }
 
 function escPress(evt) {
   if (evt.code === "Escape" && instance) {
     instance.close();
+    document.removeEventListener("keydown", escPress);
   }
 }
